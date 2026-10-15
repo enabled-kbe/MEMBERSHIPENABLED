@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ead1a4" />
+  <meta name="description" content="Registrasi keanggotaan Enabled — dukungan, informasi, dan akses manfaat bagi keluarga." />
+  <title>Keanggotaan Enabled</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Enabled beranda">
+      <img src="assets/logo.png" alt="Logo Enabled" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex'" />
+      <span class="brand-fallback">enabled<span>.</span></span>
+    </a>
+    <a class="top-link" href="#registrasi">Daftar Member <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Kuat Bersama Enabled</p>
+        <h1>Lebih terhubung.<br /><span>Lebih berdaya.</span></h1>
+        <p class="hero-description">Menjadi bagian dari komunitas Enabled untuk membuka akses informasi, dukungan, dan manfaat bagi keluarga.</p>
+        <a class="primary-button" href="#manfaat">Klik di sini untuk registrasi member <span aria-hidden="true">↓</span></a>
+        <div class="hero-note"><span class="note-icon">✳</span><span>Ruang dukungan yang tumbuh bersama keluarga.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi keluarga dan dukungan">
+        <div class="art-circle art-circle-one"></div><div class="art-circle art-circle-two"></div>
+        <div class="art-card"><span class="art-spark">✳</span><span>Small steps,<br /><b>stronger together.</b></span></div>
+        <div class="art-photo-placeholder"><span>Tempatkan ilustrasi atau foto pilihan di sini</span></div>
+        <img class="child-image" src="assets/anak.png" alt="Ilustrasi anak" onerror="this.style.display='none'" />
+        <span class="art-caption">Every journey matters.</span>
+      </div>
+    </section>
+
+    <section class="benefits section" id="manfaat">
+      <div class="section-heading">
+        <p class="eyebrow">MANFAAT KEANGGOTAAN</p>
+        <h2>Manfaat untuk perjalanan<br class="desktop-only" /> yang lebih terbantu.</h2>
+        <p>Kenali manfaat yang direncanakan untuk anggota Enabled.</p>
+      </div>
+      <div class="benefit-grid">
+        <article class="benefit-card"><span class="benefit-icon">✚</span><span class="benefit-number">01</span><h3>Jaringan rumah sakit</h3><p>Informasi dan akses melalui jaringan mitra rumah sakit di berbagai wilayah Indonesia.</p><span class="benefit-tag">Target kemitraan: 100 rumah sakit</span></article>
+        <article class="benefit-card"><span class="benefit-icon">↗</span><span class="benefit-number">02</span><h3>Akses transportasi</h3><p>Akses informasi promo atau potongan harga GrabCar dan GoCar bagi anggota, sesuai syarat mitra.</p><span class="benefit-tag">Manfaat anggota</span></article>
+        <article class="benefit-card"><span class="benefit-icon">♡</span><span class="benefit-number">03</span><h3>Akses informasi donasi</h3><p>Informasi dan kesempatan mengikuti program donasi yang tersedia melalui Enabled.</p><span class="benefit-tag">Dukungan komunitas</span></article>
+        <article class="benefit-card"><span class="benefit-icon">＋</span><span class="benefit-number">04</span><h3>Supplier alat kesehatan</h3><p>Informasi jaringan supplier alat kesehatan dan peluang akses sesuai ketersediaan serta ketentuan mitra.</p><span class="benefit-tag">Target kemitraan: 1.000 supplier</span></article>
+      </div>
+      <p class="benefit-disclaimer">Catatan: jumlah mitra dan manfaat di atas merupakan informasi program yang perlu dikonfirmasi sebelum dipublikasikan sebagai manfaat aktif. Potongan harga dan akses tertentu bergantung pada ketersediaan serta ketentuan mitra.</p>
+    </section>
+
+    <section class="registration section" id="registrasi">
+      <div class="registration-intro">
+        <p class="eyebrow">LANGKAH BERIKUTNYA</p><h2>Daftar sebagai<br /><span>Member Enabled.</span></h2>
+        <p>Isi data berikut dengan benar. Setelah dikirim, kartu keanggotaan virtual akan ditampilkan di layar.</p>
+        <div class="privacy-note"><span aria-hidden="true">♧</span><div><b>Data Anda perlu dijaga.</b><p>NIK dan informasi diagnosis termasuk data sensitif. Data hanya boleh diakses oleh petugas berwenang dan tidak boleh disimpan di spreadsheet publik.</p></div></div>
+      </div>
+      <form class="member-form" id="memberForm">
+        <div class="form-title"><span class="step-label">FORMULIR KEANGGOTAAN</span><span class="required-note">* Wajib diisi</span></div>
+        <label for="fullName">Nama lengkap <span>*</span><input id="fullName" name="fullName" autocomplete="name" placeholder="Nama sesuai identitas" required maxlength="120" /></label>
+        <label for="nik">NIK <span>*</span><input id="nik" name="nik" inputmode="numeric" autocomplete="off" placeholder="16 digit NIK" minlength="16" maxlength="16" pattern="[0-9]{16}" required /><small>Masukkan 16 digit angka.</small></label>
+        <div class="form-row">
+          <label for="birthDate">Tanggal lahir <span>*</span><input id="birthDate" name="birthDate" type="date" required /></label>
+          <label for="domicile">Domisili <span>*</span><input id="domicile" name="domicile" autocomplete="address-level2" placeholder="Kota / Kabupaten" required maxlength="120" /></label>
+        </div>
+        <label for="diagnosis">Diagnosis <span>*</span><textarea id="diagnosis" name="diagnosis" rows="3" placeholder="Tuliskan diagnosis yang relevan" required maxlength="1000"></textarea><small>Isi seperlunya. Informasi ini bersifat sensitif.</small></label>
+        <label class="consent"><input type="checkbox" id="consent" required /><span>Saya menyetujui penggunaan data ini untuk administrasi keanggotaan Enabled dan telah membaca penjelasan privasi. <b>*</b></span></label>
+        <button class="primary-button submit-button" id="submitButton" type="submit">Kirim pendaftaran <span aria-hidden="true">→</span></button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        <p class="form-footnote">Jangan bagikan kartu atau kode anggota kepada pihak yang tidak tepercaya.</p>
+      </form>
+    </section>
+
+    <section class="membership-result section" id="membershipResult" hidden>
+      <div class="result-heading"><p class="eyebrow">PENDAFTARAN ANDA</p><h2>Selamat datang di Enabled.</h2><p>Kartu virtual dibuat untuk ditampilkan di perangkat ini. Simpan kode anggota Anda.</p></div>
+      <div class="member-card" id="memberCard">
+        <div class="card-top"><span class="card-brand">enabled<span>.</span></span><span class="card-chip">MEMBER</span></div>
+        <div class="card-middle"><span class="card-label">VIRTUAL MEMBERSHIP CARD</span><h3 id="cardName">Nama Anggota</h3><p class="card-code" id="cardCode">KBE-000000-0000</p></div>
+        <div class="card-bottom"><span>KUAT BERSAMA ENABLED</span><span id="cardDate"></span></div>
+        <div class="card-decoration"></div>
+      </div>
+      <div class="result-actions"><button type="button" class="secondary-button" id="downloadCard">Simpan kartu (cetak / PDF)</button><button type="button" class="text-button" id="copyCode">Salin kode anggota</button></div>
+      <p class="result-warning">Catatan: kartu ini adalah tampilan digital awal, bukan bukti verifikasi manfaat atau status keanggotaan. Simpan hanya setelah status pendaftaran dikonfirmasi oleh Enabled.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-fallback">enabled<span>.</span></span></a><p>Menumbuhkan dukungan, bersama keluarga.</p><span>© <span id="year"></span> Enabled</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
